@@ -18,8 +18,8 @@ canvas.style.height = `${height}px`;
 ctx.scale(dpr, dpr);
 
 // configurações do jogo
-const gravidade = 0.3;
-const velocidade = 6;
+const gravidade = 0.2;
+const velocidade = 5;
 const tamanhoPajaro = width < 420 ? 30 : 40;
 const tamanhoObstaculo = width < 420 ? 100 : 120;
 
@@ -56,7 +56,7 @@ const livros = [
 let pajaroX = width / 2 - tamanhoPajaro / 2;
 let pajaroY = height / 2 - tamanhoPajaro / 2;
 let velocidadePajaro = 0;
-let velocidadeMaxPajaro = 12;
+let velocidadeMaxPajaro = 10;
 let obstaculoX = width;
 let obstaculoY = Math.random() * (height - tamanhoObstaculo);
 let pontuacao = 0;
